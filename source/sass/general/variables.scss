@@ -1,0 +1,41 @@
+// fonts
+$font-stack-pt-mono: 'PT Mono', 'Arial', sans-serif;
+$font-stack-roboto: 'Roboto Condensed', 'Arial', sans-serif;
+
+// Viewports
+$mobile-width: 320px;
+$mobile-width-max: 767px;
+$tablet-width: 768px;
+$tablet-width-max: 1023px;
+$desktop-width-max: 1920px;
+
+// colors
+$primary: #00B2FF;
+$secondary: #1B2D37;
+$secondary-trasporant-50: rgba($secondary, 0.5);;
+
+$basic-white: #ffffff;
+$white-transporant-80: rgba($basic-white, 0.8);
+
+$basic-black: #000000;
+$gray-text:#666666;
+
+
+// for blocks
+
+// backgrounds for pictures
+
+
+// z-indexes:
+$z-photo-under: 0;
+$z-logo: 1;
+$z-bike-item: 5;
+$z-photo-upper: 10;
+$z-menu-button: 50;
+$z-header: 100;
+
+//offset
+$bike-types-offset: 50px;
+
+//transition
+$transition-time-slow: 300ms;
