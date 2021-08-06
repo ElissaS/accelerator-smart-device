@@ -1,0 +1,137 @@
+.about {
+  padding-top: 57px;
+  padding-bottom: 40px;
+  padding-left: 179px;
+
+  @media(max-width: $tablet-width-max) {
+    padding-top: 5px;
+    padding-left: 188px;
+  }
+
+  @media(max-width: $mobile-width-max) {
+    padding-left: unset;
+    margin-left: 3px;
+  }
+}
+
+.about h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 18px;
+  font-family: $font-stack-roboto;
+  font-size: 36px;
+  line-height: 51px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $gray-text;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -178px;
+    display: block;
+    width: 157px;
+    height: 316px;
+    background-image: url("../img/year-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    &::before {
+      background-image: url("../img/year-desktop@2x.png");
+    }
+  }
+
+  @media(max-width: $tablet-width-max) {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 45px;
+
+    &::before {
+      top: -2px;
+      left: -188px;
+      width: 195px;
+      height: 362px;
+      background-image: url("../img/year-tablet.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../img/year-tablet@2x.png");
+      }
+    }
+  }
+
+  @media(max-width: $mobile-width-max) {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 40px;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.about p {
+  max-width: 984px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $font-stack-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $gray-text;
+
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  @media(max-width: $tablet-width-max) {
+    max-width: 532px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      line-height: 1.4em;
+      height: 5.6em;
+    }
+  }
+
+  @media(max-width: $mobile-width-max) {
+    max-width: 320px;
+    margin-bottom: 39px;
+
+    &:last-of-type {
+      margin-bottom: 29px;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+      line-height: 1.4em;
+      height: 11em;
+    }
+  }
+}
+
+.about__button {
+  padding: 13px 50px;
+  border: 1px solid $primary;
+  color: $primary;
+  background-color: transparent;
+
+  @media(max-width: $tablet-width-max) {
+    padding: 13px 50px 14px;
+  }
+
+  @media(max-width: $mobile-width-max) {
+    padding-left: 49px;
+  }
+}

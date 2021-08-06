@@ -4,14 +4,24 @@
 @import "general/common";
 @import "general/mixin";
 
-@import "blocks/container.scss";
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/button";
 
 // styles for header
 @import "blocks/page-header";
 @import "blocks/main-nav";
 
-// // styles for main
-// @import "blocks/page-main";
+// styles for main
+@import "blocks/welcome";
+@import "blocks/description";
+@import "blocks/advantages";
+@import "blocks/about";
 
 // // styles for footer
-// @import "blocks/page-footer";
+@import "blocks/page-footer";
+@import "blocks/links";
+@import "blocks/site-structure";
+@import "blocks/sections";
+@import "blocks/contacts";
+@import "blocks/rights";

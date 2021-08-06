@@ -1,5 +1,6 @@
 // fonts
 $font-stack-pt-mono: 'PT Mono', 'Arial', sans-serif;
+// $font-stack-roboto: 'PT Mono', 'Arial', sans-serif;
 $font-stack-roboto: 'Roboto Condensed', 'Arial', sans-serif;
 
 // Viewports
@@ -16,22 +17,23 @@ $secondary-trasporant-50: rgba($secondary, 0.5);;
 
 $basic-white: #ffffff;
 $white-transporant-80: rgba($basic-white, 0.8);
+$white-transporant-50: rgba($basic-white, 0.5);
 
 $basic-black: #000000;
 $gray-text:#666666;
 
+$gray-border: #DCDDDC;
+$advantages-border:#EBEBEB;
 
 // for blocks
 
 // backgrounds for pictures
-
 
 // z-indexes:
 $z-photo-under: 0;
 $z-logo: 1;
 $z-bike-item: 5;
 $z-photo-upper: 10;
-$z-menu-button: 50;
 $z-header: 100;
 
 //offset

@@ -1,0 +1,19 @@
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__item {
+  font-family: $font-stack-pt-mono;
+  font-size: 15px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $secondary-trasporant-50;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+

@@ -1,0 +1,15 @@
+.links {
+  grid-area: links;
+}
+
+.links__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  max-width: 112px;
+}
+
+.links__logo-link {
+  display: block;
+  margin-bottom: 54px;
+}

@@ -1,0 +1,26 @@
+.page-footer {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 82%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $gray-border;
+  }
+}
+
+.page-footer__container {
+  display: grid;
+  grid-template-areas:
+    "links structure"
+    "rights rights";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto auto;
+  max-width: 1493px;
+  padding-top: 65px;
+  padding-bottom: 14px;
+}

@@ -1,0 +1,26 @@
+.rights {
+  padding-top: 14px;
+  grid-area: rights;
+}
+
+.rights__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rights__item {
+  font-family: $font-stack-pt-mono;
+  font-size: 13px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: $secondary-trasporant-50;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-left: 7%;
+  }
+}

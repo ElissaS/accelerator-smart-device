@@ -1,0 +1,285 @@
+.advantages {
+  padding-top: 109px;
+  padding-bottom: 50px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 54px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 37px;
+  }
+}
+
+.advantages__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__header {
+  position: relative;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $font-stack-roboto;
+  font-size: 24px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -58px;
+    left: 0;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 9px;
+
+    &--detective {
+      margin-bottom: 13px;
+    }
+
+    &::before {
+      top: -43px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 20px;
+    line-height: 28px;
+
+    &--detective {
+      margin-bottom: 16px;
+    }
+
+    &::before {
+      top: -49px;
+    }
+  }
+}
+
+.advantages__header--stopwatch {
+  &::before {
+    width: 29px;
+    height: 35px;
+    background-image: url("../img/icons/stopwatch-icon.svg");
+    background-size: 29px 35px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    &::before {
+      width: 30px;
+      height: 36px;
+      background-size: 30px 36px;
+    }
+  }
+}
+
+.advantages__header--suppliers {
+  &::before {
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icons/suppliers-icon.svg");
+    background-size: 35px 35px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    &::before {
+      width: 32px;
+      height: 32px;
+      background-size: 32px 32px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    &::before {
+      top: -44px;
+    }
+  }
+}
+
+.advantages__header--detective {
+  &::before {
+    top: -54px;
+    left: 0;
+    width: 36px;
+    height: 31px;
+    background-image: url("../img/icons/detectiveconfidental-icon.svg");
+    background-size: 36px 31px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    &::before {
+      top: -39px;
+      width: 31px;
+      height: 26px;
+      background-size: 31px 26px;
+    }
+  }
+}
+
+.advantages__header--tagprice {
+  &::before {
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icons/tagprice-icon.svg");
+    background-size: 35px 35px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    &::before {
+      width: 32px;
+      height: 32px;
+      background-size: 32px 32px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 16px;
+
+    &::before {
+      top: -43px;
+    }
+  }
+}
+
+.advantages p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: $font-stack-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $gray-text;
+}
+
+.advantages__item {
+  max-width: 570px;
+  padding: 99px 40px 62px;
+  border: 1px solid $advantages-border;
+  border-left: 3px solid $primary;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: $basic-white;
+
+  &--detective {
+    padding-top: 93px;
+  }
+
+  &--tagprice {
+    padding-top: 93px;
+    padding-bottom: 83px;
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+
+  &:hover,
+  &:focus {
+    border: 1px solid $primary;
+    border-left: 3px solid $primary;
+    background-color: $primary;
+    cursor: pointer;
+
+    h3,
+    p {
+      color: $basic-white;
+    }
+
+    .advantages__header--stopwatch {
+      &::before {
+        background-image: url("../img/icons/stopwatch-icon-hover.svg");
+      }
+    }
+
+    .advantages__header--suppliers {
+      &::before {
+        background-image: url("../img/icons/suppliers-icon-hover.svg");
+      }
+    }
+
+    .advantages__header--detective {
+      &::before {
+        background-image: url("../img/icons/detectiveconfidental-icon-hover.svg");
+      }
+    }
+
+    .advantages__header--tagprice {
+      &::before {
+        background-image: url("../img/icons/tagprice-icon-hover.svg");
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    max-width: 460px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 345px;
+    padding: 65px 20px 15px 25px;
+
+    &--tagprice {
+      padding-top: 65px;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 292px;
+    min-height: 232px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 73px 14px 17px 24px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--stopwatch p {
+      max-width: 249px;
+    }
+
+    &--suppliers {
+      padding-top: 68px;
+      padding-bottom: 22px;
+    }
+
+    &--detective {
+      padding-top: 63px;
+      padding-bottom: 56px;
+    }
+
+    &--tagprice {
+      padding-top: 68px;
+
+      p {
+        max-width: 248px;
+      }
+    }
+  }
+}

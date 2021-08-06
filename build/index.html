@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
     <div class="page-header__container container">
       <a class="page-header__logo">
@@ -47,7 +47,7 @@
         </ul>
       </nav>
 
-      <button class="page-header__button" type="button">
+      <button class="page-header__button button" type="button">
         Заказать звонок
       </button>
     </div>
@@ -58,17 +58,152 @@
       <div class="welcome__container container">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button>Получить бесплатную консультацию</button>
-        <button>Скролл вниз</button>
+        <button class="welcome__button">
+          <span class="welcome__tablet">Получить бесплатную консультацию</span>
+          <span class="welcome__mobile">бесплатная консультация</span>
+        </button>
+        <a class="welcome__scroll" href="#footer">Скролл вниз</a>
+      </div>
+    </section>
+
+    <section class="page-main__description description">
+      <div class="description__container container">
+        <div class="description__advantages advantages">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--stopwatch">
+              <h3 class="advantages__header advantages__header--stopwatch">Оперативные сроки</h3>
+              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
+                доставлять
+                заказы плат и комплектующих в самые короткие сроки
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--suppliers">
+              <h3 class="advantages__header advantages__header--suppliers">Крупные поставщики</h3>
+              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--detective">
+              <h3 class="advantages__header advantages__header--detective">Полная конфиденциальность</h3>
+              <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--tagprice">
+              <h3 class="advantages__header advantages__header--tagprice">Персонализация стоимости</h3>
+              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+                устраивает.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="description__about about">
+          <h2>О компании</h2>
+          <p>
+            Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии
+            с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+          </p>
+          <p>
+            Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+            (РЖД),&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+            Производители светотехники России.
+          </p>
+          <button class="about__button button" type="button">Подробнее</button>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="container">
-      <h2>footer</h2>
+  <!-- <footer class="page-footer" id="footer">
+    <div class="page-footer__container container">
+      <section class="page-footer__links links">
+        <h2 class="visually-hidden">footer</h2>
+        <a class="links__logo-link" href="#">
+          <img src="img/icons/logo-footer.svg" alt="Логотип компании Smart Device" width="216" height="52">
+        </a>
+        <ul class="links__list">
+          <li class="links__item">
+            <a class="links__link links__link--fb" href="#">
+              <svg width="27" height="27">
+                <use xlink:href="img/icons/sprite.svg#fb-icon"></use>
+              </svg>
+              <span class="visually-hidden">перейти в facebook</span>
+            </a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--classmates" href="#">
+              <svg width="27" height="27">
+                <use xlink:href="img/icons/sprite.svg#classmates-icon"></use>
+              </svg>
+              <span class="visually-hidden">перейти в Одноклассники</span>
+            </a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--vk" href="#">
+              <svg width="27" height="27">
+                <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
+              </svg>
+              <span class="visually-hidden">перейти в VK</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__site-structure site-structure">
+        <div class="site-structure__sections sections">
+          <h3>Разделы сайта</h3>
+          <ul class="sections__list">
+            <li class="sections__item">
+              <a class="sections__link" href="#about-us">О компании</a>
+            </li>
+            <li class="sections__item">
+              <a class="sections__link" href="#our-goods">Продукты</a>
+            </li>
+            <li class="sections__item">
+              <a class="sections__link" href="#production-service">Производство печатных плат</a>
+            </li>
+            <li class="sections__item">
+              <a class="sections__link" href="#mounting-service">Монтаж печатных плат</a>
+            </li>
+            <li class="sections__item">
+              <a class="sections__link" href="#our-accessories">Комплектующие</a>
+            </li>
+            <li class="sections__item">
+              <a class="sections__link" href="#our-delivery">Доставка</a>
+            </li>
+            <li class="sections__item">
+              <a class="sections__link" href="#our-contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-structure__contacts contacts">
+          <h3>Наш офис</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              г. Мытищи, Олимпийский проспект, д.10
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-footer__rights rights">
+        <ul class="rights__list">
+          <li class="rights__item">Все права защищены</li>
+          <li class="rights__item">1999-2018 SD Service Devices</li>
+          <li class="rights__item">Условия конфиденциальности</li>
+          <li class="rights__item">Developed by wow studio</li>
+        </ul>
+      </section>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="js/main.js"></script>
 </body>

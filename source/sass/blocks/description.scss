@@ -1,0 +1,25 @@
+.description {
+  background-image: url("../img/triangle-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 55% 9%;
+
+  @media (max-width: $tablet-width-max) {
+    background-image: url("../img/triangle-tablet.png");
+    background-position: right -36%;
+  }
+
+}
+
+.description__container {
+  max-width: 1250px;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 768px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 320px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+}

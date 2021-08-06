@@ -1,0 +1,29 @@
+// .sections h3 {
+//   margin: 0;
+//   margin-bottom: 29px;
+//   font-family: $font-stack-roboto;
+//   font-size: 15px;
+//   line-height: 16px;
+//   font-style: normal;
+//   font-weight: 400;
+//   letter-spacing: 0.05em;
+//   text-align: left;
+// }
+
+.sections__list {
+  @include list-reset;
+  display: grid;
+  column-gap: 70px;
+  row-gap: 5px;
+  grid-template-columns: auto auto;
+}
+
+// .sections__link {
+//   font-family: $font-stack-pt-mono;
+//   font-size: 15px;
+//   line-height: 25px;
+//   font-style: normal;
+//   font-weight: 400;
+//   text-align: left;
+//   color: $secondary-trasporant-50;
+// }

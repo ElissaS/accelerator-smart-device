@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-right: 38px;
+  margin-right: 50px;
 
   @media (max-width: $tablet-width-max) {
     margin-right: 0;
@@ -37,7 +37,7 @@
   color: $basic-white;
 
   @media (max-width: $tablet-width-max) {
-    padding: 12px 14px 0;
+    padding: 12px 15px 0;
     font-size: 0;
   }
 
@@ -50,14 +50,14 @@
 
 .contacts-list__icon {
   position: absolute;
-  top: 2px;
-  left: -29px;
+  top: 1px;
+  left: -37px;
   width: 26px;
   height: 19px;
 
   &--phone {
-    top: 0;
-    left: -26px;
+    top: -1px;
+    left: -36px;
     width: 24px;
     height: 24px;
   }

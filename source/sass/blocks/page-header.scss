@@ -1,8 +1,15 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-header;
+}
+
 .page-header__container {
   max-width: 1495px;
   padding-top: 33px;
   padding-bottom: 33px;
-  background-color: saddlebrown;
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
@@ -11,13 +18,14 @@
 
   @media (max-width: $tablet-width-max) {
     max-width: 768px;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-right: 11px;
     padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 
   @media (max-width: $mobile-width-max) {
-    max-width: 287px;
+    max-width: 90%;
     padding: 0;
     padding-top: 5px;
   }
@@ -33,19 +41,8 @@
 }
 
 .page-header__button {
-  padding: 13px 25px;
-  font-family: $font-stack-roboto;
-  font-size: 14px;
-  line-height: 16px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-align: center;
   color: $basic-white;
   background-color: transparent;
-  border: 1px solid $basic-white;
-  border-radius: 5px;
 
   @media (max-width: $tablet-width-max) {
     display: none;

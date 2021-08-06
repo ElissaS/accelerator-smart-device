@@ -1,0 +1,6 @@
+.page {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  min-width: 320px;
+  min-height: 100vh;
+}
