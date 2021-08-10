@@ -1,15 +1,17 @@
 .about {
   padding-top: 57px;
-  padding-bottom: 40px;
+  padding-bottom: 111px;
   padding-left: 179px;
 
   @media(max-width: $tablet-width-max) {
     padding-top: 5px;
+    padding-bottom: 83px;
     padding-left: 188px;
   }
 
   @media(max-width: $mobile-width-max) {
     padding-left: unset;
+    padding-bottom: 65px;
     margin-left: 3px;
   }
 }
