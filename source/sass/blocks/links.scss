@@ -1,15 +1,51 @@
 .links {
   grid-area: links;
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 29px;
+  }
 }
 
 .links__list {
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  max-width: 112px;
+  width: 112px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 10px;
+  }
 }
 
 .links__logo-link {
   display: block;
   margin-bottom: 54px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 10px;
+  }
+}
+
+.links__company {
+  display: none;
+  font-family: $font-stack-pt-mono;
+  font-size: 13px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: $secondary-trasporant-50;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 14px;
+  }
 }

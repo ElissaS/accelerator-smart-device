@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 109px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 54px;
@@ -185,14 +185,13 @@
     margin-right: 0;
   }
 
-  &:nth-last-child(2) {
-    margin-bottom: 0;
-  }
+  // &:nth-last-child(2) {
+  //   margin-bottom: 0;
+  // }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
 
   &:hover,
   &:focus {

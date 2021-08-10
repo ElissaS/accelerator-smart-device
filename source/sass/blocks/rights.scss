@@ -1,6 +1,11 @@
 .rights {
   padding-top: 14px;
   grid-area: rights;
+
+  @media (max-width: $tablet-width-max) {
+
+    padding-top: 22px;
+  }
 }
 
 .rights__list {
@@ -22,5 +27,13 @@
 
   &:last-child {
     margin-left: 7%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+
+    &--all-rights,
+    &--company {
+      display: none;
+    }
   }
 }

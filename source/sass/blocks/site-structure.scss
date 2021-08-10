@@ -3,7 +3,20 @@
   justify-content: space-between;
   grid-area: structure;
   padding-bottom: 55px;
+
+  @media (max-width: $tablet-width-max) {
+    justify-content: start;
+    padding-bottom: 16px;
+  }
 }
+
+.site-structure__sections {
+
+  @media (max-width: $tablet-width-max) {
+    margin-right: 142px;
+  }
+}
+
 
 .site-structure h3 {
   margin: 0;
@@ -15,6 +28,11 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   text-align: left;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 25px;
+  }
 }
 
 .site-structure a {
