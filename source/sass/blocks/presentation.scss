@@ -1,6 +1,6 @@
 .presentation {
   padding-top: 88px;
-  padding-bottom: 123px;
+  padding-bottom: 122px;
   background-color: $secondary;
 
   @media (max-width: $tablet-width-max) {
@@ -19,7 +19,6 @@
   @media (max-width: $tablet-width-max) {
     max-width: 768px;
   }
-
 
   @media (max-width: $mobile-width-max) {
     max-width: 400px;
@@ -159,9 +158,4 @@
 .presentation__img {
   width: 100%;
   height: auto;
-
-  // @media (max-width: $tablet-width-max) {
-  //   height: auto;
-
-  // }
 }

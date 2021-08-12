@@ -1,0 +1,273 @@
+.form {
+  padding-top: 92px;
+  padding-bottom: 92px;
+  background-color: $primary;
+  background-image: url("../img/plane-pic-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 1758px;
+  background-position: 106% 61%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/plane-pic-desktop@2x.png");
+  }
+
+  @media (max-width: $tablet-width-max) {
+    background-image: unset;
+    padding-top: 80px;
+    padding-bottom: 83px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
+}
+
+.form__container {
+  max-width: 1250px;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 637px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 320px;
+  }
+}
+
+.form__body {
+  max-width: 570px;
+  margin-left: auto;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 320px;
+  }
+}
+
+.form__header {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: $font-stack-roboto;
+  font-size: 36px;
+  line-height: 51px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 11px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.form__text {
+  margin: 0;
+  margin-bottom: 52px;
+  font-family: $font-stack-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 26px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 14px 16px 16px;
+  background-color: $primary-transporant;
+  border: 1px solid $primary-transporant;
+
+  &--name,
+  &--phone {
+    width: 270px;
+  }
+
+  &--textarea {
+    min-height: 154px;
+    margin-bottom: 37px;
+    padding-top: 12px;
+  }
+
+  &::placeholder {
+    font-family: $font-stack-pt-mono;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    color: $basic-white;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding: 14px 16px 17px;
+
+    &--name,
+    &--phone {
+      width: 276px;
+    }
+
+    &--textarea {
+      min-height: 160px;
+      padding-top: 12px;
+      margin-bottom: 39px;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+
+    &--name,
+    &--phone,
+    &--textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 31px;
+    }
+
+    &--textarea {
+      min-height: unset;
+      padding-top: 11px;
+    }
+  }
+}
+
+.form__inner-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+.form__inner-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width-max) {
+    display: block;
+  }
+}
+
+.form__input-box-name {
+  position: relative;
+  display: block;
+  max-width: 230px;
+  margin: 0;
+  cursor: pointer;
+  font-family: $font-stack-pt-mono;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $white-transporant-80;
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: 33px;
+  }
+}
+
+.form__input-box+label::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 3px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $basic-white;
+
+  @media (max-width: $tablet-width-max) {
+    left: -32px;
+    top: 2px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    left: -32px;
+    top: 1px;
+  }
+}
+
+.form__input-box:hover+label::before,
+.form__input-box:focus+label::before {
+  border: 1px solid $white-transporant-50;
+}
+
+.form__input-box:active+label::before {
+  border: 1px solid $secondary;
+}
+
+.form__input-box:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 8px;
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    top: 7px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    left: -28px;
+    top: 6px;
+  }
+}
+
+.form__button {
+  background-color: transparent;
+  color: $basic-white;
+  margin-right: 66px;
+  padding: 14px 80px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-right: 73px;
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-bottom: 17px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}

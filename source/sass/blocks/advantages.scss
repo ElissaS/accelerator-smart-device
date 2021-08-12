@@ -8,6 +8,7 @@
 
   @media (max-width: $mobile-width-max) {
     padding-top: 37px;
+    padding-bottom: 50px;
   }
 }
 
@@ -184,14 +185,6 @@
   &:nth-child(2n) {
     margin-right: 0;
   }
-
-  // &:nth-last-child(2) {
-  //   margin-bottom: 0;
-  // }
-
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
 
   &:hover,
   &:focus {
