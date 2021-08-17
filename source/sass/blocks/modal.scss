@@ -1,0 +1,174 @@
+.modal {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: $z-modal;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.modal__container {
+  position: fixed;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 490px;
+  height: 605px;
+  max-height:78vh;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  background-color: $primary;
+  overflow-y: auto;
+  z-index: 65;
+}
+
+.modal__button-cross {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/icons/cross.svg");
+}
+
+.modal__body {
+  margin: 0 auto;
+}
+
+.modal__header {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: $font-stack-roboto;
+  font-size: 28px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $basic-white;
+}
+
+.modal__text {
+  max-width: 385px;
+  margin: 0;
+  margin-bottom: 33px;
+  font-family: $font-stack-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $basic-white;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 11px 16px 16px;
+  font-family: $font-stack-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $basic-white;
+  background-color: $primary-transporant;
+  border: 1px solid $primary-transporant;
+
+  &--name,
+  &--phone {
+    display: block;
+    width: 100%;
+    margin-bottom: 31px;
+  }
+
+  &--textarea {
+    display: block;
+    width: 100%;
+    min-height: 104px;
+    margin-bottom: 29px;
+    padding-top: 10px;
+    resize: none;
+  }
+
+  &::placeholder {
+    font-family: $font-stack-pt-mono;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    color: $basic-white;
+  }
+}
+
+.modal__input-box-name {
+  position: relative;
+  display: block;
+  max-width: 310px;
+  margin: 0;
+  margin-left: 47px;
+  cursor: pointer;
+  font-family: $font-stack-pt-mono;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $white-transporant-80;
+}
+
+.modal__input-box+label::before {
+  content: "";
+  position: absolute;
+  left: -48px;
+  top: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $basic-white;
+}
+
+.modal__input-box:hover+label::before,
+.modal__input-box:focus+label::before {
+  border: 1px solid $white-transporant-50;
+}
+
+.modal__input-box:active+label::before {
+  border: 1px solid $secondary;
+}
+
+.modal__input-box:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: 6px;
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal__button {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 35px;
+  padding-bottom: 17px;
+  background-color: transparent;
+  color: $basic-white;
+}

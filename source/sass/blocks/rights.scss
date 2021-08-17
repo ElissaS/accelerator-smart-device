@@ -3,8 +3,11 @@
   grid-area: rights;
 
   @media (max-width: $tablet-width-max) {
-
     padding-top: 22px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 0;
   }
 }
 
@@ -12,6 +15,11 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width-max) {
+    display: block;
+  }
+
 }
 
 .rights__item {

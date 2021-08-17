@@ -31,7 +31,6 @@
     padding-bottom: 65px;
     background-position: 64%;
     background-image: url("../img/welcome-backpic-mobile.jpg");
-    // overflow-x: hidden;
 
     &::before {
       content: "";
@@ -155,6 +154,7 @@
 }
 
 .welcome__button {
+  display: block;
   margin-bottom: 5px;
   margin-left: 97px;
   padding: 17px 44px;

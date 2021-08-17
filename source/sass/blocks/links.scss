@@ -8,6 +8,13 @@
     align-items: center;
     padding-bottom: 29px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    justify-content: center;
+    margin-bottom: 56px;
+    padding-bottom: 0;
+    gap: 10px;
+  }
 }
 
 .links__list {

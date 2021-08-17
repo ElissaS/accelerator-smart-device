@@ -1,8 +1,8 @@
-.contacts__list {
+.contacts-list {
   @include list-reset;
 }
 
-.contacts__item {
+.contacts-list__item {
   font-family: $font-stack-pt-mono;
   font-size: 15px;
   line-height: 25px;
@@ -15,5 +15,3 @@
     margin-bottom: 0;
   }
 }
-
-

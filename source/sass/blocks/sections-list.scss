@@ -1,0 +1,14 @@
+.sections-list {
+  @include list-reset;
+  display: grid;
+  column-gap: 70px;
+  row-gap: 5px;
+  grid-template-columns: auto auto;
+
+  @media (max-width: $tablet-width-max) {
+    grid-template-columns: auto;
+    column-gap: unset;
+    row-gap: 0;
+  }
+}
+
