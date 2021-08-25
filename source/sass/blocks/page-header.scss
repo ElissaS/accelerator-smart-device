@@ -45,6 +45,18 @@
   color: $basic-white;
   background-color: transparent;
 
+  &:hover,
+  &:focus {
+    color: $basic-white;
+    background-color: $primary;
+  }
+
+  &:active {
+    color: $primary;
+    border: 1px solid $basic-white;
+    background-color: $basic-white;
+  }
+
   @media (max-width: $tablet-width-max) {
     display: none;
   }

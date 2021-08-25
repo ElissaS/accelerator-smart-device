@@ -26,7 +26,7 @@
   transform: translate(-50%, -50%);
   width: 490px;
   height: 605px;
-  max-height:78vh;
+  max-height: 78vh;
   padding-top: 30px;
   padding-bottom: 34px;
   background-color: $primary;
@@ -75,8 +75,12 @@
   color: $basic-white;
 }
 
-.modal__input {
+
+.modal__field--name input,
+.modal__field--phone input {
+  display: block;
   width: 100%;
+  margin-bottom: 31px;
   padding: 11px 16px 16px;
   font-family: $font-stack-pt-mono;
   font-size: 16px;
@@ -88,21 +92,41 @@
   background-color: $primary-transporant;
   border: 1px solid $primary-transporant;
 
-  &--name,
-  &--phone {
-    display: block;
-    width: 100%;
-    margin-bottom: 31px;
+  &::placeholder {
+    font-family: $font-stack-pt-mono;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    color: $basic-white;
   }
 
-  &--textarea {
-    display: block;
-    width: 100%;
-    min-height: 104px;
-    margin-bottom: 29px;
-    padding-top: 10px;
-    resize: none;
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+    border: 1px solid $secondary;
   }
+}
+
+
+.modal__field textarea {
+  display: block;
+  width: 100%;
+  min-height: 104px;
+  margin-bottom: 29px;
+  padding-top: 10px;
+  padding: 11px 16px 16px;
+  font-family: $font-stack-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: $basic-white;
+  background-color: $primary-transporant;
+  border: 1px solid $primary-transporant;
+  resize: none;
 
   &::placeholder {
     font-family: $font-stack-pt-mono;
@@ -113,9 +137,15 @@
     text-align: left;
     color: $basic-white;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+    border: 1px solid $secondary;
+  }
 }
 
-.modal__input-box-name {
+.modal__field--box label {
   position: relative;
   display: block;
   max-width: 310px;
@@ -131,7 +161,7 @@
   color: $white-transporant-80;
 }
 
-.modal__input-box+label::before {
+.modal__field--box input+label::before {
   content: "";
   position: absolute;
   left: -48px;
@@ -142,16 +172,16 @@
   border: 1px solid $basic-white;
 }
 
-.modal__input-box:hover+label::before,
-.modal__input-box:focus+label::before {
+.modal__field--box input:hover+label::before,
+.modal__field--box input:focus+label::before {
   border: 1px solid $white-transporant-50;
 }
 
-.modal__input-box:active+label::before {
+.modal__field--box input:active+label::before {
   border: 1px solid $secondary;
 }
 
-.modal__input-box:checked+label::after {
+.modal__field--box input:checked+label::after {
   content: "";
   position: absolute;
   left: -44px;

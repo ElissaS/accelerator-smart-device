@@ -1,25 +1,23 @@
 .welcome {
   position: relative;
   padding-top: 316px;
-  padding-bottom: 269px;
+  padding-bottom: 292px;
   background-color: $secondary;
-  background-image: url("../img/welcome-backpic-desktop.jpg");
+  background-image: url("../img/welcome-backpic-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/welcome-backpic-desktop@2x.jpg");
+    background-image: url("../img/welcome-backpic-mobile@2x.jpg");
   }
 
   @media (max-width: $tablet-width-max) {
     padding-top: 188px;
-    padding-bottom: 158px;
-    background-position: center;
-  }
+    padding-bottom: 181px;
 
-  @media (max-width: $tablet-width) {
     background-image: url("../img/welcome-backpic-tablet.jpg");
+    background-position: 50% 5%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/welcome-backpic-tablet@2x.jpg");
@@ -58,6 +56,37 @@
 
 .welcome__container {
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -68%;
+    right: 0;
+    display: block;
+    width: 705px;
+    height: 515px;
+    background-image: url("../img/welcome-scheme-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 12px;
+    padding-left: 14px;
+  }
+}
+
+.welcome__inner {
+  position: relative;
   max-width: 800px;
   margin-left: 11%;
 
@@ -74,8 +103,6 @@
   @media (max-width: $mobile-width) {
     max-width: 317px;
     margin-left: unset;
-    padding-right: 12px;
-    padding-left: 14px;
   }
 }
 
@@ -107,8 +134,9 @@
 
 .welcome p {
   position: relative;
+  max-width: 683px;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 60px;
   margin-left: 97px;
   font-family: $font-stack-pt-mono;
   font-size: 22px;
@@ -130,7 +158,7 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: 55px;
+    margin-bottom: 72px;
     margin-left: 50px;
     font-size: 18px;
     line-height: 28px;
@@ -154,10 +182,9 @@
 }
 
 .welcome__button {
-  display: block;
   margin-bottom: 5px;
   margin-left: 97px;
-  padding: 17px 44px;
+  padding: 17px 48px;
   font-family: $font-stack-roboto;
   font-size: 16px;
   line-height: 19px;
@@ -171,14 +198,28 @@
   border: 1px solid $primary;
   border-radius: 5px;
 
+  &:hover,
+  &:focus {
+    color: $primary;
+    background-color: transparent;
+  }
+
+  &:active {
+    color: $basic-white;
+    border: 1px solid $primary;
+  }
+
   @media(max-width: $tablet-width-max) {
     margin-left: 51px;
     padding: 17px 30px;
   }
 
   @media (max-width: $mobile-width-max) {
-    margin-left: 4px;
-    padding: 17px 30px 17px 32px;
+    display: block;
+    // margin-left: 4px;
+    // padding: 17px 30px 17px 32px;
+    margin-left: unset;
+    padding: 17px 16px 17px 16px;
   }
 }
 
@@ -199,8 +240,8 @@
 .welcome__scroll {
   position: absolute;
   top: 418px;
-  left: 5px;
-  transform: rotate(90deg);
+  left: -27px;
+  transform: rotate(-90deg);
   font-family: $font-stack-pt-mono;
   font-size: 14px;
   line-height: 16px;
@@ -211,7 +252,7 @@
 
   &:hover {
     color: $primary;
-    transform:rotate(90deg) scale(1.2);
+    transform: rotate(-90deg) scale(1.2);
   }
 
   @media(max-width: $tablet-width-max) {

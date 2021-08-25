@@ -22,20 +22,21 @@ function hideAll() {
 
 accordeon.addEventListener('click', accordeonHandler);
 
-const formSubmitButton = document.querySelector(".form__button");
+const formSubmitButton = document.querySelector('.form__button');
 
 formSubmitButton.onclick = function (evt) {
   evt.preventDefault();
 }
 
-const headerButton = document.querySelector(".page-header__button");
-const modalWindow = document.querySelector(".modal");
-const modalSubmitButton = document.querySelector(".modal__button");
-const modalCloseButton = document.querySelector(".modal__button-cross");
+const headerButton = document.querySelector('.page-header__button');
+const modalWindow = document.querySelector('.modal');
+const modalSubmitButton = document.querySelector('.modal__button');
+const modalCloseButton = document.querySelector('.modal__button-cross');
 
 
-const openModal = function () {
-  modalWindow.classList.remove("modal--hidden");
+const openModal = function (evt) {
+  evt.preventDefault();
+  modalWindow.classList.remove('modal--hidden');
 }
 
 headerButton.addEventListener('click', openModal);
@@ -43,41 +44,25 @@ headerButton.addEventListener('click', openModal);
 if (modalWindow !== null) {
   modalWindow.onclick = function (evt) {
     if (evt.target === modalWindow) {
-      modalWindow.classList.add("modal--hidden");
+      modalWindow.classList.add('modal--hidden');
     }
   }
 
-  document.addEventListener("keydown", function (evt) {
-    if (evt.key === "Escape") {
-      modalWindow.classList.add("modal--hidden");
+  document.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape') {
+      modalWindow.classList.add('modal--hidden');
     }
   })
 
   modalSubmitButton.onclick = function (evt) {
     evt.preventDefault();
-    modalWindow.classList.add("modal--hidden");
+    modalWindow.classList.add('modal--hidden');
   }
 
   modalCloseButton.onclick = function (evt) {
-    modalWindow.classList.add("modal--hidden");
+    modalWindow.classList.add('modal--hidden');
   }
 }
-
-'use strict';
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
-
-// pageHeader.classList.remove('page-header--nojs');
-
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
 
 const formButton = document.querySelector('.form__button');
 const nameInput = document.querySelector('.form__input--name');

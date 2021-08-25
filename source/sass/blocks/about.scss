@@ -11,7 +11,7 @@
 
   @media(max-width: $mobile-width-max) {
     padding-left: unset;
-    padding-bottom: 65px;
+    padding-bottom: 68px;
     margin-left: 3px;
   }
 }
@@ -123,11 +123,23 @@
   }
 }
 
-.about__button {
+.about__link {
   padding: 13px 50px;
   border: 1px solid $primary;
   color: $primary;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $basic-white;
+    background-color: $primary;
+  }
+
+  &:active {
+    color: $primary;
+    border: 1px solid $secondary;
+    background-color: $secondary;
+  }
 
   @media(max-width: $tablet-width-max) {
     padding: 13px 50px 14px;

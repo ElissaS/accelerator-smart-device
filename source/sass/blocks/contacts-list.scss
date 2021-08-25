@@ -1,5 +1,9 @@
 .contacts-list {
   @include list-reset;
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 287px;
+  }
 }
 
 .contacts-list__item {
@@ -13,5 +17,17 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.contacts-list__link {
+  
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+
+  &:active {
+    color: $secondary;
   }
 }

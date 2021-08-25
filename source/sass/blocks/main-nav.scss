@@ -36,6 +36,19 @@
   text-align: left;
   color: $basic-white;
 
+
+  &:hover,
+  &:focus {
+    color: $primary;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+    color: $white-transporant-50;
+  }
+
+
   @media (max-width: $tablet-width-max) {
     padding: 12px 15px 0;
     font-size: 0;
